@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+
+	<display-name>TelecommunicationProject</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+
+
+	<!-- Client Servlets -->
+	<servlet>
+		<servlet-name>ClientLogInServlet</servlet-name>
+		<servlet-class>mainProject.controller.clients.ClientLogInServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ClientLogInServlet</servlet-name>
+		<url-pattern>/ClientLogIn</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ClientLogOutServlet</servlet-name>
+		<servlet-class>mainProject.controller.clients.ClientLogOutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ClientLogOutServlet</servlet-name>
+		<url-pattern>/ClientLogOut</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ClientShowBillServlet</servlet-name>
+		<servlet-class>mainProject.controller.sellers.ClientShowBillServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ClientShowBillServlet</servlet-name>
+		<url-pattern>/ShowBill</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ClientPayBillServlet</servlet-name>
+		<servlet-class>mainProject.controller.sellers.ClientPayBillServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ClientPayBillServlet</servlet-name>
+		<url-pattern>/PayBill</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ClientCallHistoryServlet</servlet-name>
+		<servlet-class>mainProject.controller.sellers.ClientCallHistoryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ClientCallHistoryServlet</servlet-name>
+		<url-pattern>/CallHistory</url-pattern>
+	</servlet-mapping>
+	
+
+	<!-- Seller Servlets -->
+	<servlet>
+		<servlet-name>SellerLogInServlet</servlet-name>
+		<servlet-class>mainProject.controller.sellers.SellerLogInServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SellerLogInServlet</servlet-name>
+		<url-pattern>/SellerLogIn</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	
+		<servlet-name>Seller-PlanToClientServlet</servlet-name>
+		<servlet-class>mainProject.controller.sellers.SellerPlanToClientServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Seller-PlanToClientServlet</servlet-name>
+		<url-pattern>/Seller-PlanToClient</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	
+		<servlet-name>SellerNewClientServlet</servlet-name>
+		<servlet-class>mainProject.controller.sellers.SellerNewClientServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SellerNewClientServlet</servlet-name>
+		<url-pattern>/SellerNewClient</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	
+		<servlet-name>SellerLogOutServlet</servlet-name>
+		<servlet-class>mainProject.controller.sellers.SellerLogOutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SellerLogOutServlet</servlet-name>
+		<url-pattern>/SellerLogOut</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SellerBillToClientServlet</servlet-name>
+		<servlet-class>mainProject.controller.sellers.SellerBillToClientServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SellerBillToClientServlet</servlet-name>
+		<url-pattern>/SellerCreateBill</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- Admin Servlets -->
+	<servlet>
+		<servlet-name>AdminLogInServlet</servlet-name>
+		<servlet-class>mainProject.controller.admins.AdminLogInServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminLogInServlet</servlet-name>
+		<url-pattern>/AdminLogIn</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminLogOutServlet</servlet-name>
+		<servlet-class>mainProject.controller.admins.AdminLogOutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminLogOutServlet</servlet-name>
+		<url-pattern>/AdminLogOut</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AdminNewSellerServlet</servlet-name>
+		<servlet-class>mainProject.controller.admins.AdminNewSellerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminNewSellerServlet</servlet-name>
+		<url-pattern>/AdminNewSeller</url-pattern>
+	</servlet-mapping>	
+	
+	<servlet>
+		<servlet-name>AdminUpdatePlanServlet</servlet-name>
+		<servlet-class>mainProject.controller.admins.AdminUpdatePlanServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminUpdatePlanServlet</servlet-name>
+		<url-pattern>/AdminUpdatePlan</url-pattern>
+	</servlet-mapping>
+		
+	<servlet>
+		<servlet-name>AdminNewPlanServlet</servlet-name>
+		<servlet-class>mainProject.controller.admins.AdminNewPlanServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdminNewPlanServlet</servlet-name>
+		<url-pattern>/AdminNewPlan</url-pattern>
+	</servlet-mapping>
+
+</web-app>
